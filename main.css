@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.swiper {
+    width: 700px;
+    height: 600px;
+    text-align: center;
+}
+
+/* 
+body {
+    transition: background 0.5s ease-in-out;
+}
+
+.bg-slide-1 {
+    background: linear-gradient(to right, #F4A764, #FFDEC2);
+}
+
+.bg-slide-2 {
+    background: linear-gradient(to right, #ADB0B0, #E1E1E1);
+}
+
+.bg-slide-3 {
+    background: linear-gradient(to right, #30A357, #75E39A);
+}
+
+.bg-slide-4 {
+    background: linear-gradient(to right, #F24F4F, #FFA895);
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.second_ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav_li {
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .sing_up_btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: none;
+    transition: .3s ease;
+}
+
+.sing_up_btn:hover {
+    background-color: black;
+    color: white;
+} */
+
+
+.main_div {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fisrt_title {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info_watch {
+    text-align: start;
+    width: 600px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.price_watch {
+    color: white;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.swiper-button-prev {
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: black;
+    transition: .3s ease;
+}
+
+.swiper-button-prev:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0 0 22px 3px black;
+}
+
+.swiper-button-next {
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: black;
+    transition: .3s ease;
+}
+
+.swiper-button-next:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0 0 22px 3px black;
+}
+
+
+.second_mdiv {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.dumolo_div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 20px 3px white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+body {
+    transition: background 0.5s ease-in-out;
+    text-align: center;
+}
+
+.bg-slide-1 {
+    background: linear-gradient(to right, #F4A764, #FFDEC2);
+}
+
+.bg-slide-2 {
+    background: linear-gradient(to right, #ADB0B0, #E1E1E1);
+}
+
+.bg-slide-3 {
+    background: linear-gradient(to right, #30A357, #75E39A);
+}
+
+.bg-slide-4 {
+    background: linear-gradient(to right, #F24F4F, #FFA895);
+}
+
+#watch-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+
+.rolex_div {
+    overflow: visible !important;
+    position: relative;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgba(175, 173, 173, 0.442);
+}
+
+
+.fav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.rolex_div {
+    transition: .3s ease;
+}
+
+.rolex_div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px 5px rgba(94, 38, 38, 0.2);
+}
+
+.add_btn {
+    background: none;
+    /* width: 120px; */
+    /* height: 30px; */
+    border-top-left-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.add_btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.selected-watches {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#remove_all_btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.main_div2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.rolex_title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.line {
+    width: 1000px;
+    height: 5px;
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.rolex_name {
+    font-size: 24px;
+    text-align: start;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.rolex_info {
+    font-size: 18px;
+    text-align: start;
+    font-weight: 400;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rolex_price {
+    font-size: 20px;
+    text-align: start;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.items_user {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.footer_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.socila_us {
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    padding: 50px;
+}
+
+.dm2 {
+    background-color: black;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 20px 3px black;
+}
+
+/* ********************************************* */
+
+
+.bg_watch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 390px;
+    background-color: black;
+}
+
+.bgw_title {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+}
+
+.bgw_info {
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bgw_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    transition: .4s ease;
+    border: 2px solid white;
+}
+
+.bgw_btn:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.209);
+}

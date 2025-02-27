@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanlangan Soatlar</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <h2>Tanlangan Soatlar</h2>
+    <div class="selected-watches" style="display: flex; flex-wrap: wrap; gap: 50px; justify-content: center;">
+    </div>
+
+    <button id="remove_all_btn">Remove All</button>
+    <a href="./index.html">Back to Rolex</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let selectedWatches = JSON.parse(localStorage.getItem("selectedWatches")) || [];
+            console.log("LocalStorage:", selectedWatches); // LOCALSTORAGE TEKSHIRISH
+
+            let container = document.querySelector(".selected-watches"); // TO‘G‘RI NODNI TANLASH
+            if (!container) {
+                console.error("Hato! .selected-watches topilmadi.");
+                return;
+            }
+
+            if (selectedWatches.length > 0) {
+                selectedWatches.forEach((watchHTML) => {
+                    container.innerHTML += watchHTML;
+                });
+            }
+
+            // "Remove All" tugmasini ishlatish uchun
+            document.getElementById("remove_all_btn").addEventListener("click", function () {
+                localStorage.removeItem("selectedWatches"); // LOCALSTORAGE TOZALASH
+                container.innerHTML = ""; // UI dan ham o‘chirish
+            });
+        });
+    </script>
+
+</body>
+
+</html>
